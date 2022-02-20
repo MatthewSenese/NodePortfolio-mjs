@@ -17,7 +17,7 @@ const server = http.createServer((request, response) => {
         response.write('<a href = "https://node-on-azure-mjs.azurewebsites.net/">Node on Azure Example</a><br><br>')
     }
     else {
-        response.write('<h2>Past Assignments:</h2>')
+        response.write('<h2>Past Assignments:</h2><br>')
             
         response.write('<a href="https://thankful-water-089720a10.1.azurestaticapps.net/">Web Resume</a> <br>')
         response.write('<a href="https://kind-hill-02c495910.1.azurestaticapps.net/">Dice Roller</a> <br>')
@@ -32,4 +32,7 @@ const server = http.createServer((request, response) => {
     
 });
 
+const port = process.env.PORT || 1337;
+server.listen(port);
 
+console.log("Server running at http://localhost:%d", port);
