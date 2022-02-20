@@ -17,9 +17,8 @@ const server = http.createServer((request, response) => {
     // Suggest adding something tl the url so that we can parse it. 
     response.write("Consider adding '/past' to the URL to see past assignments.<br><br>");
     var q = url.parse(request.url, true).query;
-});
 
-    // If statement that shows what to present based on url
+     // If statement that shows what to present based on url
     if (q = "past") {
         response.write('<a href="https://thankful-water-089720a10.1.azurestaticapps.net/">Web Resume</a> <br>')
         response.write('<a href="https://kind-hill-02c495910.1.azurestaticapps.net/">Dice Roller</a> <br>')
@@ -29,6 +28,9 @@ const server = http.createServer((request, response) => {
         response.write('<a href = "https://thankful-pebble-0d8039610.1.azurestaticapps.net/">Getting to Know Our Team</a>')
         response.write('<a href = "https://node-on-azure-mjs.azurewebsites.net/">Node on Azure Example</a>')
     }
+});
+
+
 
 const port = process.env.PORT || 1337;
 server.listen(port);
