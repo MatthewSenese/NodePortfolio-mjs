@@ -10,24 +10,30 @@ const server = http.createServer((request, response) => {
     response.write('<h1>Matthew: Assignment Portfolio</h1><br><br><hr><br>')
     response.write('<h2>Current Assignments: </h2><br>')
 
+    response.write('<a href = "https://thankful-pebble-0d8039610.1.azurestaticapps.net/">Getting to Know Our Team</a>')
+    response.write('<a href = "https://node-on-azure-mjs.azurewebsites.net/">Node on Azure Example</a>')
+
+    
+    response.write('<h2>Past Assignments:</h2>')
+        
+    response.write('<a href="https://thankful-water-089720a10.1.azurestaticapps.net/">Web Resume</a> <br>')
+    response.write('<a href="https://kind-hill-02c495910.1.azurestaticapps.net/">Dice Roller</a> <br>')
+    response.write('<a href="https://mango-pebble-032731f10.1.azurestaticapps.net/">Regular Expression Tester</a>')
+
 
     // Show the url. 
     response.write("req.url="+request.url+"<br><br>");
 
-    // Suggest adding something tl the url so that we can parse it. 
+    // Suggest adding something to the url so that we can parse it. 
     response.write("Consider adding '/past' to the URL to see past assignments.<br><br>");
     var q = url.parse(request.url, true).query;
 
     // ADJUST THE IF STATEMENT SO THAT IT LOADS AN INITIAL PAGE AND THEN ADJUSTS
 
      // If statement that shows what to present based on url
-    
-        response.write('<a href="https://thankful-water-089720a10.1.azurestaticapps.net/">Web Resume</a> <br>')
-        response.write('<a href="https://kind-hill-02c495910.1.azurestaticapps.net/">Dice Roller</a> <br>')
-        response.write('<a href="https://mango-pebble-032731f10.1.azurestaticapps.net/">Regular Expression Tester</a>')
+
      
-        response.write('<a href = "https://thankful-pebble-0d8039610.1.azurestaticapps.net/">Getting to Know Our Team</a>')
-        response.write('<a href = "https://node-on-azure-mjs.azurewebsites.net/">Node on Azure Example</a>')
+
     
 });
 
