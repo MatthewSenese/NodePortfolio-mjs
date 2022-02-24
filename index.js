@@ -10,7 +10,8 @@ const port = process.env.PORT || 8080;
 
 
 // Listen on the defined port
-// const logMessage = "Server running at http://localhost: " + port
-app.listen(port, () => 
-console.log(`Server running at http://localhost:${port};` 
-+ 'press Ctrl-C to terminate.'))
+const logMessage = "Server running at http://localhost: " + port
+app.listen(port, () => {
+    console.log(logMessage)
+    console.log('press Ctrl-C to terminate.\n')
+})
