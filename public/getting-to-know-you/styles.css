@@ -1,0 +1,19 @@
+html {
+    background-color: lightblue;
+}
+
+body {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+li {
+    text-align: center;
+    list-style-type:square;
+    list-style-position: inside;
+}
+
+img {
+    text-align: center;
+    width: 300px;
+}

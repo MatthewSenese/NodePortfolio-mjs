@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- 
+        Author: Matthew Senese
+        Class: Software Engineering
+        Program: Regular Expression Tester
+        Description: This program will test whether a string is a valid regular expression or not
+    -->
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Regular Expression Tester</title>
+
+        <link rel="stylesheet" href="RegExTester.css">
+        <script src="RegExTester.js"></script>
+
+    </head>
+
+    <body>
+        <h1>Regular Expression Tester</h1>
+        <hr>
+        <hr>
+        <!-- Boxes for input of the text to test and the expression-->
+        <h3>Text:</h3> <input id="txt" type="text" pattern="regexp" value="swimming"><br>
+        <h3>Expression:</h3> <input id="exp" type="text" value="swim"><br><br>
+
+        <!-- Button to click that calls the JavaScript function to test the text against the expression-->
+        <button type="button" onclick="testRegEx()">Test Expression</button><br><br>
+
+        <br>
+        <hr>
+        <hr>
+        <br>
+
+        <!-- Shows whether the text fits the expression or not-->
+        <h3>Result:</h3>
+        <div id="result">
+            <p> </p>
+
+        </div>
+
+    </body>
+
+</html>

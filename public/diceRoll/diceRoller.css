@@ -1,0 +1,26 @@
+head {
+    text-align:center;
+}
+
+body {
+    text-align: center;
+    background-color: burlywood;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    text-align: center;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}

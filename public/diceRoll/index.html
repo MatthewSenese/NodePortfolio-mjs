@@ -1,0 +1,47 @@
+<!DOCTYPE html> 
+<html lang="en">
+    <!-- 
+        Author: Matthew Senese
+        Class: Software Engineering
+        Project: Dice Roller
+        Description: This program will roll a dice for a game
+    -->
+    <head>
+        <meta charset="UTF-8">
+        <title>Dice Roller</title>
+        <link rel="stylesheet" href="diceRoller.css">
+        <script src="diceRoller.js"></script>
+    </head>
+    <body>
+        <h1>Welcome to Dice Roller!</h1>
+        <hr>
+        <hr>
+        <h3>Each player will roll 2 dice, and the person with the closer numbers wins</h3>
+        <hr>
+        <hr>
+        <br>
+        <div class="row">
+            <div class="column">
+                <button type="button" onclick="RollDie1Player1()">Player 1: Die #1</button><br>
+                Die #1: <input id="dice1p1" type="text" value="" size="5" disabled><br><br>
+
+                <button type="button" onclick="RollDie2Player1()">Player 1: Die #2</button><br>
+                Die #2: <input id="dice2p1" type="text" value="" size="5" disabled><br><br><br>
+            </div>
+
+            <div class="column">
+                <img src="dice.jpg" alt="Dice">
+            </div>
+
+            <div class="column">
+                <button type="button" onclick="RollDie1Player2()">Player 2: Die #1</button><br>
+                Die #1: <input id="dice1p2" type="text" value="" size="5" disabled><br><br>
+
+                <button type="button" onclick="RollDie2Player2()">Player 2: Die #2</button><br>
+                Die #2: <input id="dice2p2" type="text" value="" size="5" disabled><br>
+            </div>
+        
+    </div>
+    </body>
+
+</html>

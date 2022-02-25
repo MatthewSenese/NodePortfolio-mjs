@@ -1,0 +1,13 @@
+h1 {text-align: center;}
+h4 {text-align: center;}
+h5 {font-style: italic;}
+p {
+    padding-bottom: 10px;
+}
+ul {
+    padding-bottom: 20px;
+}
+body {
+    width: 595px;
+    margin: auto;
+}
